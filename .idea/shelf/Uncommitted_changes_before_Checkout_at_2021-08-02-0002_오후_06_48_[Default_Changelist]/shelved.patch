@@ -1,0 +1,76 @@
+Index: .idea/runConfigurations.xml
+===================================================================
+diff --git a/.idea/runConfigurations.xml b/.idea/runConfigurations.xml
+deleted file mode 100644
+--- a/.idea/runConfigurations.xml	(revision 71dadb7c792ddbf22a2759c5f9246d244e23a65e)
++++ /dev/null	(revision 71dadb7c792ddbf22a2759c5f9246d244e23a65e)
+@@ -1,12 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="RunConfigurationProducerService">
+-    <option name="ignoredProducers">
+-      <set>
+-        <option value="org.jetbrains.plugins.gradle.execution.test.runner.AllInPackageGradleConfigurationProducer" />
+-        <option value="org.jetbrains.plugins.gradle.execution.test.runner.TestClassGradleConfigurationProducer" />
+-        <option value="org.jetbrains.plugins.gradle.execution.test.runner.TestMethodGradleConfigurationProducer" />
+-      </set>
+-    </option>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <bytecodeTargetLevel target=\"1.8\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	(revision 71dadb7c792ddbf22a2759c5f9246d244e23a65e)
++++ b/.idea/compiler.xml	(date 1627895653591)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="CompilerConfiguration">
+-    <bytecodeTargetLevel target="1.8" />
++    <bytecodeTargetLevel target="11" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: app/src/main/java/com/example/foody/util/Constants.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.foody.util\r\n\r\nclass Constants {\r\n\r\n    companion object {\r\n\r\n        const val BASE_URL = \"https://api.spoonacular.com\"\r\n        const val API_KEY = \"[YOUR API KEY HERE]\"\r\n\r\n        // API Query Keys\r\n        const val QUERY_SEARCH = \"query\"\r\n        const val QUERY_NUMBER = \"number\"\r\n        const val QUERY_API_KEY = \"apiKey\"\r\n        const val QUERY_TYPE = \"type\"\r\n        const val QUERY_DIET = \"diet\"\r\n        const val QUERY_ADD_RECIPE_INFORMATION = \"addRecipeInformation\"\r\n        const val QUERY_FILL_INGREDIENTS = \"fillIngredients\"\r\n\r\n        // ROOM Database\r\n        const val DATABASE_NAME = \"recipes_database\"\r\n        const val RECIPES_TABLE = \"recipes_table\"\r\n\r\n        // Bottom Sheet and Preferences\r\n        const val DEFAULT_RECIPES_NUMBER = \"50\"\r\n        const val DEFAULT_MEAL_TYPE = \"main course\"\r\n        const val DEFAULT_DIET_TYPE = \"gluten free\"\r\n\r\n        const val PREFERENCES_NAME = \"foody_preferences\"\r\n        const val PREFERENCES_MEAL_TYPE = \"mealType\"\r\n        const val PREFERENCES_MEAL_TYPE_ID = \"mealTypeId\"\r\n        const val PREFERENCES_DIET_TYPE = \"dietType\"\r\n        const val PREFERENCES_DIET_TYPE_ID = \"dietTypeId\"\r\n        const val PREFERENCES_BACK_ONLINE = \"backOnline\"\r\n\r\n    }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/foody/util/Constants.kt b/app/src/main/java/com/example/foody/util/Constants.kt
+--- a/app/src/main/java/com/example/foody/util/Constants.kt	(revision 71dadb7c792ddbf22a2759c5f9246d244e23a65e)
++++ b/app/src/main/java/com/example/foody/util/Constants.kt	(date 1627895653571)
+@@ -5,7 +5,7 @@
+     companion object {
+ 
+         const val BASE_URL = "https://api.spoonacular.com"
+-        const val API_KEY = "[YOUR API KEY HERE]"
++        const val API_KEY = "651b0331bce242bb948dc8728d13ee7c"
+ 
+         // API Query Keys
+         const val QUERY_SEARCH = "query"
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_1_8\" default=\"true\" project-jdk-name=\"1.8\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 71dadb7c792ddbf22a2759c5f9246d244e23a65e)
++++ b/.idea/misc.xml	(date 1627895653602)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
